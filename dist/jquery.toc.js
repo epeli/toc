@@ -8,7 +8,7 @@
 (function($) {
 $.fn.toc = function(options) {
   var self = this;
-  var opts = $.extend({}, jQuery.fn.toc.defaults, options);
+  var opts = $.extend({}, $.fn.toc.defaults, options);
 
   var container = $(opts.container);
   var headings = $(opts.selectors, container);
@@ -84,7 +84,7 @@ $.fn.toc = function(options) {
 };
 
 
-jQuery.fn.toc.defaults = {
+$.fn.toc.defaults = {
   container: 'body',
   selectors: 'h1,h2,h3',
   smoothScrolling: true,
